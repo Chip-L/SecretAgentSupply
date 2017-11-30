@@ -12,22 +12,18 @@ html {
 /* anything wiht this class will git the width of the screen */
 .content {
   width: 960px;
+  margin: 0 auto;
 }
 
 /* header section settings */
 .header_section {
-  background-color: black;
   width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: black;
 }
 
 header {
   display: flex;
   align-items: center;
-
 }
 
 header img {
@@ -77,4 +73,47 @@ nav {
 
 nav span {
   padding: .75rem;
+}
+
+/* product grid settings */
+.grid {
+  padding: 3rem 0 0 0;
+  display: inline-flex;;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.grid .item {
+  border: 4px solid black;
+  width: 30%;
+  display: block;
+}
+
+/* by putting the image in a container I can force the image to fit the container
+   otherwise it would overflow the size (especially the glasses). (https://stackoverflow.com/questions/3029422/how-do-i-auto-resize-an-image-to-fit-a-div-container)
+   Setting the width to 50% seems to keep the images from growing too large (I
+   don't remember wehere I found this hack). In looking at the site on
+   Codecademy, they set the image width to 8em. I'm not sure why they chose 8em
+   (I don't see where the em is defined to calculate with), but when I
+   calculated it out I got 9rem. (see the excel sheet in MiscStuff folder). */
+.item .image {
+  margin: 2rem auto;
+  height: 9rem;
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  max-width: 100%;
+}
+
+.item span {
+  display: block;
+  background-color: black;
+  padding: .5rem;
+  text-align: center;
+  width: 95%;
 }
