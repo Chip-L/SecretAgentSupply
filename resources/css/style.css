@@ -78,6 +78,7 @@ nav span {
 /* product grid settings */
 .grid {
   padding: 3rem 0 0 0;
+
   display: flex;;
   justify-content: space-between;
 }
@@ -133,4 +134,12 @@ nav span {
   margin-bottom: 4rem;
   color: black;
   display: block;
+}
+
+footer {
+  background-color: black;
+  height: 5rem;
+
+  display: flex;
+  align-items: center;
 }
