@@ -72,21 +72,19 @@ nav {
 }
 
 nav span {
-  padding: .75rem;
+  padding: .75rem 0;
 }
 
 /* product grid settings */
 .grid {
   padding: 3rem 0 0 0;
-  display: inline-flex;;
+  display: flex;;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .grid .product {
   border: 4px solid black;
   width: 30%;
-  display: block;
 }
 
 /* by putting the image in a container I can force the image to fit the container
@@ -116,4 +114,23 @@ nav span {
   padding: .5rem;
   text-align: center;
   width: 95%;
+}
+
+/* Information section settings (Location and hours) */
+.grid .info {
+  width: 35%;
+}
+
+.info .heading {
+  display: block;
+  background-color: black;
+  padding: 1rem 2rem;
+  text-align: left;
+  width: 79%;
+}
+
+.info p {
+  margin-bottom: 4rem;
+  color: black;
+  display: block;
 }
