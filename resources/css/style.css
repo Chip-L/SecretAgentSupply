@@ -1,3 +1,36 @@
-* {
-  font-family: times, Arial, sans-serif;
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+/* anything with this class wil have the text in all caps */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* header section settings */
+.header_section {
+  background-color: black;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+
+  width: 960px;
+}
+
+header img {
+  margin: .66rem .5rem;
+  height: 1rem;
+  width: auto;
+}
+
+header span {
+  color: white;
 }
