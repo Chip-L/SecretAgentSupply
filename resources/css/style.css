@@ -60,3 +60,21 @@ header img {
   font-size: 2rem;
   margin-top: .25rem;
 }
+
+/* navigation section settings */
+.nav_section {
+  background-color: firebrick;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+nav span {
+  padding: .75rem;
+}
