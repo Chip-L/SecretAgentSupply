@@ -1,11 +1,17 @@
 html {
   font-size: 18px;
   font-family: Helvetica;
+  color: white;
 }
 
 /* anything with this class wil have the text in all caps */
 .uppercase {
   text-transform: uppercase;
+}
+
+/* anything wiht this class will git the width of the screen */
+.content {
+  width: 960px;
 }
 
 /* header section settings */
@@ -22,7 +28,6 @@ header {
   display: flex;
   align-items: center;
 
-  width: 960px;
 }
 
 header img {
@@ -31,6 +36,27 @@ header img {
   width: auto;
 }
 
-header span {
-  color: white;
+/* main banner settings */
+.banner_section {
+  background-image: url("../images/moto.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 25rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.callout {
+  background-color: black;
+  width: 20rem;
+  padding: 2rem 3rem;
+  font-weight: bold;
+}
+
+.callout h1 {
+  font-size: 2rem;
+  margin-top: .25rem;
 }
