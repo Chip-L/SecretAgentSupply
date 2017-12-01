@@ -53,6 +53,7 @@ header img {
 .callout {
   background-color: black;
   width: 20rem;
+  margin-top: 9rem;
   padding: 2rem 3rem;
   font-weight: bold;
 }
@@ -119,7 +120,6 @@ image-img:
   background-color: black;
   padding: .5rem;
   text-align: center;
-  width: 95%;
 }
 
 /* Information section settings (Location and hours) */
@@ -156,6 +156,12 @@ footer {
     display: inherit;
   }
 
+  /* This will hide anything that is not displayed on the tablet (glasses) */
+  .tablet-hide {
+    display: none;
+  }
+
+  /* nav section */
   nav {
     justify-content: center;
   }
@@ -164,9 +170,50 @@ footer {
   .grid .product {
     width: 47%;
   }
+}
 
+/* tablet sizing */
+@media only screen and (max-width: 470px) {
   /* This will hide anything that is not displayed on the tablet (glasses) */
-  .tablet-hide {
+  .phone-hide {
     display: none;
+  }
+
+  /* content widh can't still be as big change to 100% to match parent container */
+  .content {
+    width: 100%;
+  }
+
+  /* main banner */
+  .banner_section {
+    height: 15rem;
+  }
+
+  .callout {
+    background-color: black;
+    width: auto;  /* auto overrides the size and fills the space */
+    margin-top: 10rem;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 0.77rem;
+  }
+
+  .callout h1 {
+    font-size: 1rem;
+  }
+
+  /* product grid */
+  .grid {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .grid .product {
+    width: 90%;
+  }
+
+  /* info grid */
+  .grid .info {
+    width: 90%;
   }
 }
