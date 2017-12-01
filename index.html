@@ -31,12 +31,16 @@
        just made them a span as it is convenient. -->
     <div class="nav_section">
       <nav class="content">
-        <span>Eyewear</span>
-        <span>Apparel</span>
-        <span>Gadgets</span>
-        <span>Vehicles</span>
-        <span>Classes</span>
-        <span>Contact</span>
+        <!-- show on desktop - not on mobile -->
+        <span class="tablet-hide">Eyewear</span>
+        <span class="tablet-hide">Apparel</span>
+        <span class="tablet-hide">Gadgets</span>
+        <span class="tablet-hide">Vehicles</span>
+        <span class="tablet-hide">Classes</span>
+        <span class="tablet-hide">Contact</span>
+
+        <!-- show on mobile - not on desktop -->
+        <span class="desktop-hide">Menu</span>
       </nav>
     </div>
 
@@ -58,7 +62,7 @@
           <span>Cellular Watch</span>
         </div>
 
-        <div class="product tablet-overflow">
+        <div class="product tablet-hide">
           <div class="image">
             <img src="./resources/images/glasses.png" alt="glasses">
           </div>

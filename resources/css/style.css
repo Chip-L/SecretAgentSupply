@@ -15,6 +15,11 @@ html {
   margin: 0 auto;
 }
 
+/* This tag will go on anything not displayed in the desktop view (width > 1024) -- the Menu div */
+.desktop-hide {
+  display: none;
+}
+
 /* header section settings */
 .header_section {
   width: 100%;
@@ -87,7 +92,7 @@ nav span {
   width: 30%;
 }
 
-/* by putting the image in a container I can force the image to fit the container otherwise it would overflow the size (especially the glasses). (https://stackoverflow.com/questions/3029422/how-do-i-auto-resize-an-image-to-fit-a-div-container) Setting the width to 50% seems to keep the images from growing too large (I don't remember wehere I found this hack). In looking at the site on Codecademy, they set the image width to 8em. I'm not sure why they chose 8em (I don't see where the em is defined to calculate with), but when I calculated it out I got 9rem. (see the excel sheet in MiscStuff folder).
+/* by putting the image in a container I can force the image to fit the container otherwise it would overflow the size (especially the glasses). (https://stackoverflow.com/questions/3029422/how-do-i-auto-resize-an-image-to-fit-a-div-container) Setting the width to 50% seems to keep the images from growing too large (I don't remember wehere I found this hack). In looking at the site on Codecademy, they set the image width to 8em. I'm not sure why they chose 8em (from the lesson), but when I calculated it out I got 9rem. (see the excel sheet in MiscStuff folder).
 product-image:
   width: 50%;
   margin: 2rem auto;
@@ -146,13 +151,22 @@ footer {
 
 /* tablet sizing */
 @media only screen and (max-width: 1024px)  {
+  /* this will reverse the desktop-hidden items. (Inherit will take the property from the parent element.) */
+  .desktop-hide {
+    display: inherit;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
   /* override the grid-product size */
   .grid .product {
     width: 47%;
   }
 
   /* This will hide anything that is not displayed on the tablet (glasses) */
-  .tablet-overflow {
+  .tablet-hide {
     display: none;
   }
 }
